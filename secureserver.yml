@@ -1,5 +1,11 @@
 ---
 - hosts: all
   sudo: true
+  vars_prompt:
+  - name: "xroad_superuser_password"
+    prompt: "Please enter password for X-Road superuser"
+    private: yes
+    encrypt: "sha512_crypt"
+    confirm: yes
   roles:
     - role: kapa-secureserver
