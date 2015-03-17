@@ -8,4 +8,6 @@
     encrypt: "sha512_crypt"
     confirm: yes
   roles:
-    - role: kapa-secureserver
+    - { role: kapa-secureserver,
+        xroad_admin_fqdn: "{{ inventory_hostname }}",
+        xroad_service_fqdn: "{{ xroad_admin_fqdn }}" }
