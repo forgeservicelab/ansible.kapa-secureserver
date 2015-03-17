@@ -12,17 +12,13 @@ Requirements
   a script that generates certificates per host. Variables are listed below for
   override purposes.
 
-Role Variables
---------------
-
-- `xroad_admin_fqdn` - FQDN for the admin Web UI certificate.
-- `xroad_service_fqdn` - FQDN for the service certificate. If uncertain, use
-   same as `xroad_admin_fqdn`.
-
 Dependencies
 ------------
 
+### Role dependencies
+
 - https://git.forgeservicelab.fi/ansible-roles/kapa-secureserver/
+
 
 License
 -------
