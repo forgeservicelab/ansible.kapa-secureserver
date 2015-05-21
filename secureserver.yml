@@ -8,6 +8,9 @@
     encrypt: "sha512_crypt"
     confirm: yes
   roles:
+    - role: forge_ssl
     - { role: kapa-secureserver,
         xroad_admin_fqdn: "{{ inventory_hostname }}",
-        xroad_service_fqdn: "{{ xroad_admin_fqdn }}" }
+        xroad_service_fqdn: "{{ xroad_admin_fqdn }}",
+        nginx_ssl_cert: "/etc/ssl/forgeservicelab.fi.key",
+        nginx_ssl_key: "/etc/ssl/forgeservicelab.fi.crt" }

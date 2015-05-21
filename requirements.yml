@@ -1,2 +1,5 @@
+- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/forge_ssl.git
+  path: roles/
+
 - src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/kapa-secureserver.git
   path: roles/
