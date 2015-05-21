@@ -9,8 +9,7 @@ Requirements
 - Ubuntu 14.04 or later on target machine.
 - The `python-passlib` package is required on the initiating machine.
 - Inventory file should preferably use FQDN instead of IP as these are passed to
-  a script that generates certificates per host. Variables are listed below for
-  override purposes.
+  a script that generates certificates per host.
 
 Dependencies
 ------------
@@ -18,7 +17,6 @@ Dependencies
 ### Role dependencies
 
 - https://git.forgeservicelab.fi/ansible-roles/kapa-secureserver/
-
 
 License
 -------
