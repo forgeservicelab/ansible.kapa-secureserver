@@ -21,7 +21,7 @@ Dependencies
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
